@@ -1,13 +1,9 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/draw_insets_frame_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ScrollView
+ <ScrollView
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -21,24 +17,24 @@
                     <FrameLayout
                         android:id="@+id/photo_container"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/photo_placeholder">
+                        android:layout_height="300dp"
+                        android:background="@color/colorPrimary">
                         <!--suppress AndroidLintContentDescription -->
                         <ImageView
                             android:id="@+id/photo"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:scaleType="fitXY" />
+                            android:scaleType="centerCrop" />
 
                     </FrameLayout>
 
                     <LinearLayout
                         android:id="@+id/meta_bar"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="140dp"
                         android:layout_gravity="bottom"
                         android:layout_marginBottom="@dimen/detail_metabar_vert_padding"
-                        android:background="@color/colorPrimaryDark"
+                        android:background="@color/colorPrimary"
                         android:orientation="vertical"
                         android:paddingBottom="@dimen/detail_metabar_vert_padding"
                         android:paddingLeft="@dimen/detail_inner_horiz_margin"
@@ -88,8 +84,8 @@
                     android:id="@+id/share_fab"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom|end"
-                    android:layout_marginBottom="110dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="410dp"
                     android:layout_marginEnd="@dimen/fab_margin"
                     android:contentDescription="@string/action_share"
                     android:src="@drawable/ic_share"
@@ -100,5 +96,3 @@
             </FrameLayout>
 
     </ScrollView>
-
-</FrameLayout>

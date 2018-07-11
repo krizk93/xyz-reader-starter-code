@@ -18,8 +18,8 @@
 <resources>
     <color name="photo_placeholder">#ccc</color>
 
-    <color name="colorPrimary">#1F96F2</color>
-    <color name="colorPrimaryDark">#1C5F93</color>
+    <color name="colorPrimary">#1C5F93</color>
+    <color name="colorPrimaryDark">#083659</color>
     <color name="colorAccent">#F3C98B</color>
     <color name="textColorGrey">#C1CFDA</color>
 </resources>
